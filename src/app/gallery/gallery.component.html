@@ -1,1 +1,23 @@
-<p>gallery works!</p>
+<div style="margin-top: 2em"></div>
+
+<jqxScrollView #myScrollView style="display: inline-block; margin-left: 20em;"
+    [width]="600" [height]="450" [buttonsOffset]="[0, 0]" >
+    <div><div class="photo" style="background-image: url(../../assets/images/car-1.jpg)"></div></div>
+    <div><div class="photo" style="background-image: url(../../assets/images/car-2.jpg)"></div></div>
+    <div><div class="photo" style="background-image: url(../../assets/images/car-3.jpg)"></div></div>
+    <div><div class="photo" style="background-image: url(../../assets/images/car-4.jpg)"></div></div>
+    <div><div class="photo" style="background-image: url(../../assets/images/car-5.jpg)"></div></div>
+</jqxScrollView>
+<div style="margin-top: 2em"></div>
+<jqxButton (onClick)="onStartClicked()"
+           [width]="120" [height]="25">
+  Start SlideShow
+</jqxButton>
+<jqxButton (onClick)="onStopClicked()"
+           [width]="120" [height]="25">
+  Stop SlideShow
+</jqxButton>
+
+
+
+
